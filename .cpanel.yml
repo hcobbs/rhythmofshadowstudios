@@ -6,4 +6,3 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp root-index.html /home/hunter14/public_html/index.html
