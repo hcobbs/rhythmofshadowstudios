@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/hcobbs/public_html/rhythmofshadowstudios/
+    - export DEPLOYPATH=/home/hunter14/public_html/rhythmofshadowstudios/
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
