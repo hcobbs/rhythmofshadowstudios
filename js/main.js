@@ -5,7 +5,7 @@
 
   var nav = document.getElementById('nav');
   var navLinks = document.querySelectorAll('.nav-links a');
-  var sections = ['home', 'games', 'about', 'contact'];
+  var sections = ['home', 'games', 'about'];
 
   // --- Nav scroll state ---
   function onScroll() {
