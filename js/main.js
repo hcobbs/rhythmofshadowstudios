@@ -20,12 +20,17 @@
   // --- Active nav link based on scroll position ---
   function updateActiveNav() {
     var active = null;
+    var nearBottom = (window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 50;
 
-    for (var i = sections.length - 1; i >= 0; i--) {
-      var el = document.getElementById(sections[i]);
-      if (el && el.getBoundingClientRect().top <= 100) {
-        active = sections[i];
-        break;
+    if (nearBottom) {
+      active = sections[sections.length - 1];
+    } else {
+      for (var i = sections.length - 1; i >= 0; i--) {
+        var el = document.getElementById(sections[i]);
+        if (el && el.getBoundingClientRect().top <= 100) {
+          active = sections[i];
+          break;
+        }
       }
     }
 
