@@ -19,12 +19,11 @@
 
   // --- Active nav link based on scroll position ---
   function updateActiveNav() {
-    var scrollPos = window.scrollY + 80;
     var active = null;
 
     for (var i = sections.length - 1; i >= 0; i--) {
       var el = document.getElementById(sections[i]);
-      if (el && scrollPos >= el.offsetTop) {
+      if (el && el.getBoundingClientRect().top <= 100) {
         active = sections[i];
         break;
       }
